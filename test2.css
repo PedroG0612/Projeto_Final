@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+
+
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Recursive', sans-serif;
+  background-color: #fff;
+  color: #000;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.logo {
+  font-family: "Kirang Haerang", system-ui;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.dot {
+  color: black;
+  font-size: 2rem;
+}
+
+.sobrenome {
+  font-weight: 300;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.Titulo {
+  font-family: 'Kalam', cursive;
+  font-size: 5rem;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+.intro h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 6rem;
+}
+.intro{
+    margin-bottom: 10rem;
+}
+
+
+
+.ui-ux-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide em 2 colunas iguais */
+  gap: 20px; /* Espaço entre as colunas (opcional) */
+  width: 100%;
+  position: relative;
+  margin-top: 2rem;
+  
+}
+
+.ui-ux-container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* "UI" | "e" | "UX" */
+  align-items: center; /* Centraliza verticalmente */
+  width: 100%;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.ui-section, .ux-section {
+  position: relative;
+  text-align: center;
+}
+
+.e-center {
+  font-size: 2rem; /* Tamanho da letra "e" */
+  font-weight: bold;
+  color: #333; /* Cor do texto */
+  z-index: 2; /* Garante que fique acima dos textos de fundo */
+  .e-center {
+  transform: translate(-50%, -50%); /* Ajuste fino vertical */
+  top: 50%;
+}
+}
+
+.ui-bg, .ux-bg {
+  font-size: 15rem;
+  font-weight: bold;
+  color: #7b3bf4;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  animation: pulse 3s infinite;
+}
+
+
+.alem-de {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: #333;
+  display: inline-block;
+  position: relative;
+  right: -35rem;
+  font-family: 'Courier New', monospace;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+/* Container para a animação de digitação */
+.alem-de .texto-digitando {
+  display: inline-block;
+  overflow: hidden;
+  animation: typing 1.5s steps(50) forwards;
+  width: 0;
+}
+
+/* Cursor POSICIONADO ABSOLUTAMENTE no final do texto completo */
+.alem-de::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: #7b3bf4;
+  opacity: 0; /* Garante que comece invisível */
+  animation:  
+    aparecer 1s forwards,
+    blink 0.75s step-end infinite;
+  animation-delay: 0s, 1s;
+   /* Só aparece após a digitação */
+  
+}
+
+
+
+.ui-bg {
+  left: 10%;
+}
+
+.ux-bg {
+  right: 10%;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.5; transform: translateY(-50%) scale(1); }
+  50% { opacity: 0.7; transform: translateY(-50%) scale(1.1); }
+  100% { opacity: 0.5; transform: translateY(-50%) scale(1); }
+}
+
+@keyframes typing {
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { opacity: 0; } /* Some no meio da animação */
+}
+
+@keyframes aparecer {
+  to { opacity: 1; }
+}
+
+
+
+
+/* Parte Sobre Mim ABAIXO*/
+
+
+.sobre-mim {
+  padding: 4rem 2rem;
+  background: #ffffff;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 1s ease-out forwards;
+  box-shadow: 5px 10px 5px 10px #d4d4d4;
+  margin-bottom: 10rem;
+}
+
+.sobre-mim .container {
+  max-width: 1000px;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "titulo"
+    "texto";
+  gap: 2rem;
+}
+
+.sobre-mim .titulo {
+  grid-area: titulo;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pontinho {
+  width: 14px;
+  height: 14px;
+  background-color: #2148ff;
+  border-radius: 50%;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.sobre-mim h2 {
+  font-size: 2.4rem;
+  font-family: 'Comic Neue', cursive;
+  margin: 0;
+}
+
+.sobre-mim .texto {
+  grid-area: texto;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.sobre-mim .texto p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  opacity: 0;
+  animation: aparecer 1s ease-in-out forwards;
+}
+
+.sobre-mim .texto p:nth-child(1) { animation-delay: 0.2s; }
+.sobre-mim .texto p:nth-child(2) { animation-delay: 0.4s; }
+.sobre-mim .texto p:nth-child(3) { animation-delay: 0.6s; }
+.sobre-mim .texto p:nth-child(4) { animation-delay: 0.8s; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.destaque {
+  color: #7f5af0;
+  font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .sobre-mim .container {
+    padding: 0 1rem;
+  }
+
+  .sobre-mim h2 {
+    font-size: 2rem;
+  }
+
+  .sobre-mim .texto p {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+/* Seção Habilidades ABAIXO*/
+
+
+
+
+.habilidades {
+  background: #ffffff;
+  color: #f1f1f1;
+  padding: 4rem 2rem;
+  box-shadow: 5px 10px 5px 10px #d4d4d4;
+}
+
+.habilidades h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #000000;
+  margin-bottom: 3rem;
+  font-family: 'Comic Neue', cursive;
+}
+
+.habilidades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.habilidade {
+  background-color: #1e1e2f;
+  padding: 1.8rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(127, 90, 240, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.habilidade:hover {
+  transform: translateY(-5px);
+  background-color: #28283f;
+}
+
+.habilidade p {
+  line-height: 1.6;
+  font-size: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 1rem;
+}
+
+.icone {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  animation: iconpulse 2s infinite;
+}
+
+.icone img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 3px #7f5af0);
+}
+
+@keyframes iconpulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Delay para efeito em cascata */
+.fade-in:nth-child(1) { animation-delay: 0.1s; }
+.fade-in:nth-child(2) { animation-delay: 0.3s; }
+.fade-in:nth-child(3) { animation-delay: 0.5s; }
+.fade-in:nth-child(4) { animation-delay: 0.7s; }

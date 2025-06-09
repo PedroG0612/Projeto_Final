@@ -1,0 +1,99 @@
+.hero {
+  padding: 80px 40px;
+  background: white;
+  color: black;
+  font-family: 'K2D', sans-serif;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.text-block {
+  flex: 1;
+  max-width: 500px;
+}
+
+.text-block h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.text-block .dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #7b3bf4;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.text-block p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.btn.hire {
+  background-color: black;
+  color: white;
+}
+
+.btn.hire:hover {
+  background-color: #333;
+}
+
+.btn.portfolio {
+  border: 2px solid black;
+  color: black;
+}
+
+.btn.portfolio:hover {
+  background-color: #f1f1f1;
+}
+
+.ui-image {
+  position: relative;
+  flex: 1;
+  text-align: center;
+}
+
+.ui-image img {
+  max-height: 400px;
+  z-index: 1;
+  position: relative;
+}
+
+.ui-bg {
+  position: absolute;
+  font-size: 30rem;
+  font-weight: bold;
+  color: #7b3bf4;
+  opacity: 0.2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}

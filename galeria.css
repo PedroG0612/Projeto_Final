@@ -1,0 +1,181 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Londrina+Solid:wght@100;300;400;900&display=swap');
+
+
+
+
+
+
+.titulo-section {
+  background-color: #00CFFF;
+  color: black;
+  padding: 100px 20px;
+  text-align: center;
+  font-family: 'Jockey One', sans-serif;
+}
+
+.titulo-section h1 {
+  margin: 0;
+  font-size: 70px;
+  font-family: "Londrina Solid", sans-serif;
+}
+
+.titulo-section p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #002f3d;
+  font-family: 'K2D', sans-serif;
+}
+
+
+.timeline {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+}
+
+.item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #00CFFF;
+}
+
+.conteudo {
+  max-width: 600px;
+}
+
+.data {
+  background-color: #00CFFF;
+  color: black;
+  display: inline-block;
+  padding: 5px 10px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  font-family: 'K2D', sans-serif;
+  font-size: 14px;
+}
+
+/* Timeline Styles */
+.timeline-container {
+  padding: 40px 20px;
+  background-color: #0a192f;
+}
+
+.timeline {
+  position: relative;
+  color: #00CFFF;
+  padding: 20px 0;
+}
+
+.timeline:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  width: 3px;
+  margin-left: -1.5px;
+  background-color: currentcolor;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 20px 40px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.timeline-item:before {
+  content: " ";
+  position: absolute;
+  top: 24px;
+  right: -10px;
+  border-width: 10px;
+  border-color: transparent transparent transparent #00CFFF;
+  border-style: solid;
+}
+
+.timeline-item:nth-child(even) {
+  margin-left: 50%;
+}
+
+.timeline-item:nth-child(even):before {
+  right: auto;
+  left: -10px;
+  border-color: transparent #00CFFF transparent transparent;
+}
+
+.card {
+  background-color: #020312;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #00CFFF;
+  color: black;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 8px 8px 0 0;
+  font-family: 'K2D', sans-serif;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-family: 'Jockey One', sans-serif;
+}
+
+.card-text {
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: 'K2D', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .timeline:before {
+    left: 20px;
+  }
+  
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 20px;
+  }
+  
+  .timeline-item:nth-child(even) {
+    margin-left: 0;
+  }
+  
+  .timeline-item:before {
+    right: auto;
+    left: 10px;
+    border-color: transparent #00CFFF transparent transparent;
+  }
+  
+  .timeline-item:nth-child(even):before {
+    left: 10px;
+    border-color: transparent #00CFFF transparent transparent;
+  }
+}
