@@ -3,107 +3,977 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pedro Garcia - Desenvolvedor Web</title>
+  <title>Pedro Garcia - Portfólio</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="home.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Recursive:wght@500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-        
-  <h1>Pedro Garcia</h1>
-        
-        
+    <a href="#" class="logo">
+  Pedro<span class="dot">.</span><span class="sobrenome">garcia</span>
+</a>
+
     <nav>
       <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="galeria.html">Galeria</a></li>
-        <li><a href="#">Habilidades</a></li>
-        <li><a href="#">Reflexão Final</a></li>
+        <li><a href="#Quem_sou_eu">Quem sou eu,</a></li>
+        <li><a href="#Projetos">Projetos,</a></li>
+        <li><a href="#Habilidades">Habilidades,</a></li>
+        <li><a href="#Reflexão_final">Reflexão Final</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
-  <div class="hero-content">
-    <div class="text-block">
-      <h1><span class="dot"></span> Design <br><strong>Experience</strong></h1>
-      <p>Oi! Sou Pedro Garcia, criador de interfaces ousadas e modernas. 
-         5 anos de experiência (quase 😄), transformando ideias em telas incríveis!</p>
-      <div class="buttons">
-        <a href="#" class="btn hire">Linkedin</a>
-        <a href="#portfolio" class="btn portfolio">Ver Portfólio</a>
+  <main>
+    <div class="intro">
+  <h1 class="titulo">
+    <span class="t1">Desenvolvedor</span><br>
+    <span class="t2">Aprendiz em Semântica <span class="t3"><span class="ht">HTML </span>e Estilos <span class="cs">CSS</span></span></span><br>
+    
+  </h1>
+    </div>
+
+
+<h2 class="alem-de" id="alemDe"></h2>
+
+
+<div class="ui-ux-container">
+  <div class="ui-section">
+    <span class="ui-label">UI</span>
+  </div>
+
+  <div class="e-center">e</div>
+
+  <div class="ux-section">
+    <span class="ux-label">UX</span>
+  </div>
+</div>
+
+
+
+<section class="sobre-mim">
+  <div class="container">
+    <div class="titulo">
+      <div class="pontinho"></div>
+      <h2 id="Quem_sou_eu">Quem sou eu?</h2>
+    </div>
+    
+    <div class="conteudo">
+      <div class="foto-perfil">
+        <img src="img/ChatGPT Image Jun 11, 2025, 09_30_53 AM.png" alt="Pedro Garcia">
+      </div>
+
+      <div class="texto">
+  <p>
+    Olá! Sou <strong>Pedro Garcia</strong>, apaixonado por tecnologia e entusiasta do 
+    <strong class="destaque">Desenvolvimento Web</strong>. Desde cedo, descobri na programação uma forma de transformar ideias em soluções reais. 💡
+  </p>
+
+  <p>
+    Atualmente, estou cursando <strong>Desenvolvimento de Sistemas</strong> no <strong>SENAI</strong>, onde venho adquirindo uma base sólida em 
+    <strong>HTML</strong>, <strong>CSS</strong>, <strong>boas práticas de programação</strong> e diversos conceitos importantes como 
+    <strong>design</strong>, <strong>tipografia</strong>, <strong>hierarquia de cores</strong> e os princípios da <strong>Gestalt</strong>.
+  </p>
+
+  <p>
+    Também estou me aprofundando em <strong>lógica de programação</strong>, <strong>algoritmos</strong> e na integração entre 
+    <strong>front-end</strong> e <strong>back-end</strong>, buscando sempre evoluir minhas habilidades. 🚀
+  </p>
+
+</div>
+
+    </div>
+  </div>
+</section>
+<section class="timeline-container">
+  <h1 class="projetos-title"  id="Projetos">Projetos</h1>
+  <div class="timeline">
+    
+    <div class="timeline-divider">📘 Início do Curso</div>
+
+    <!-- Alan Turing -->
+    <div class="timeline-item">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">🧠</span>
+          <span class="card-date">05/02</span>
+          <span class="card-title">Alan Turing</span>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-description">
+              Atividade para pesquisar uma personalidade importante na tecnologia. Escolhemos Alan Turing, pioneiro da computação e da inteligência artificial.
+            </p>
+
+            <div class="card-learn">
+              <span class="learn-title">O que aprendi:</span>
+              <p>O impacto de Turing na história da computação e como a lógica influencia a tecnologia moderna.</p>
+            </div>
+
+            <blockquote class="card-quote">
+              "Fiquei impressionado com como ideias de décadas atrás ainda moldam a tecnologia de hoje."
+            </blockquote>
+          </div>
+
+          <div class="card-footer">
+           
+            
+            <div class="card-image">
+              <img src="img/Alan Turing.svg" alt="Alan Turing" loading="lazy">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="ui-image">
-      <img src="img\image.png" alt="Pedro Garcia">
-      <h1 class="ui-bg">Ui</h1>
+    
+    <!-- Componentes de PC -->
+    <div class="timeline-item">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">🖥️</span>
+          <span class="card-date">07/02</span>
+          <span class="card-title">Componentes de PC</span>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-description">
+              Desenvolvi um fluxograma com os principais componentes de um PC e suas conexões, mostrando como funcionam juntos. Usei o Miro para representar o fluxo entre peças como CPU, RAM, HD/SSD, fonte, placa-mãe e periféricos.
+            </p>
+            
+            <div class="card-learn">
+              <span class="learn-title">O que aprendi:</span>
+              <p>A importância da integração dos componentes para o funcionamento eficaz de um computador.</p>
+            </div>
+            
+            <blockquote class="card-quote">
+              "Percebi como cada peça depende da outra para que tudo funcione perfeitamente."
+            </blockquote>
+          </div>
+
+          <div class="card-footer">
+            
+            
+            <div class="card-image">
+              <img src="img/Componentes do Computador.svg" alt="Componentes de PC" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Monte seu PC -->
+    <div class="timeline-item">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">🔧</span>
+          <span class="card-date">07/02</span>
+          <span class="card-title">Monte seu PC</span>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-description">
+              Nesta atividade, realizamos a pesquisa e montagem lógica de três computadores com orçamentos e finalidades diferentes. O primeiro, com orçamento de R$ 3.000, foi voltado para tarefas básicas, utilizando componentes de entrada com bom custo-benefício, como processador com vídeo integrado e SSD. O segundo, com R$ 5.000, foi projetado para jogos, priorizando uma boa placa de vídeo dedicada e desempenho em multitarefa. O terceiro, com R$ 8.000, foi desenvolvido para uso em escritório com alta performance, focando em velocidade, grande capacidade de memória RAM e armazenamento NVMe de alto desempenho.
+            </p>
+            
+            <div class="card-learn">
+              <span class="learn-title">O que aprendi:</span>
+              <p>Como adaptar o hardware às necessidades específicas dos usuários e orçamentos variados.</p>
+            </div>
+            
+            <blockquote class="card-quote">
+              "Cada escolha de componente impacta diretamente no desempenho e no custo final."
+            </blockquote>
+          </div>
+
+          <div class="card-footer">
+            
+            
+            <div class="card-image">
+              <img src="img/Desafio Monte Seu PC Ideal!.svg" alt="Monte seu PC" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+  
+    <!-- Explorando o Linux e Comparando com o Windows -->
+    <div class="timeline-item">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">💻</span>
+          <span class="card-date">12/02</span>
+          <span class="card-title">Explorando o Linux e Comparando com o Windows</span>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-description">
+              Nesta atividade prática, utilizamos uma máquina virtual no VirtualBox com uma distribuição Linux (como Ubuntu ou Debian) para explorar seu funcionamento e compará-lo com o sistema Windows. Em grupos, navegamos pelo sistema de arquivos, utilizamos o terminal com comandos básicos, instalamos softwares via terminal e acessamos a internet. Com base na experiência, desenvolvemos um relatório destacando semelhanças, diferenças e desafios entre os dois sistemas.
+            </p>
+            
+            <div class="card-learn">
+              <span class="learn-title">O que aprendi:</span>
+              <p>As diferenças fundamentais e pontos fortes de Linux e Windows, ampliando minha visão sobre sistemas operacionais.</p>
+            </div>
+            
+            <blockquote class="card-quote">
+              "Entender ambos os sistemas é essencial para tomar decisões informadas na área de TI."
+            </blockquote>
+          </div>
+
+          <div class="card-footer">
+            
+            
+            <div class="card-image">
+              <img src="img/Atividade Sistemas Operacionais (2)-1.svg" alt="Explorando Linux e Windows" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Integrando o Kanban ao Projeto de Vida -->
+    <div class="timeline-item">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">📊</span>
+          <span class="card-date">21/02</span>
+          <span class="card-title">Integrando o Kanban ao Projeto de Vida</span>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-description">
+              Nesta atividade, utilizamos ferramentas de organização visual como Trello, Mural ou Miro para aplicar o método Kanban na gestão do nosso projeto de vida pessoal e profissional. Criamos quadros com colunas representando etapas de progresso ("Sonhos e Metas", "A Fazer", "Em Andamento" e "Concluído"), detalhando objetivos de longo prazo, tarefas necessárias para alcançá-los e avanços já realizados.
+            </p>
+            
+            <div class="card-learn">
+              <span class="learn-title">O que aprendi:</span>
+              <p>A importância da organização visual para o acompanhamento eficiente dos objetivos pessoais e profissionais.</p>
+            </div>
+            
+            <blockquote class="card-quote">
+              "Visualizar minhas metas em um quadro Kanban facilitou meu foco e motivação para alcançá-las."
+            </blockquote>
+          </div>
+
+          <div class="card-footer">
+
+            
+            <div class="card-image">
+              <img src="img/Projeto de Vida.png" alt="Integrando Kanban ao Projeto de Vida" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Descobrindo meu papel no Scrum -->
+    <div class="timeline-item">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">🔄</span>
+          <span class="card-date">21/02</span>
+          <span class="card-title">Descobrindo meu papel no Scrum</span>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-description">
+              Nesta atividade, realizamos uma autoanálise de perfil pessoal e profissional para identificar com qual papel do framework Scrum mais nos identificamos: Product Owner, Scrum Master ou Desenvolvedor. Estudamos as funções e responsabilidades de cada papel, refletimos sobre nossas habilidades e interesses, e escolhemos aquele que melhor se alinha ao nosso perfil.
+            </p>
+            
+            <div class="card-learn">
+              <span class="learn-title">O que aprendi:</span>
+              <p>A importância de conhecer meu perfil para contribuir melhor em equipes ágeis.</p>
+            </div>
+            
+            <blockquote class="card-quote">
+              "Saber meu papel no Scrum me ajudou a entender como posso colaborar para o sucesso do time."
+            </blockquote>
+          </div>
+
+          <div class="card-footer">
+
+            
+            <div class="card-image">
+              <img src="img/Descobrindo Meu Papel no Scrum.svg" alt="Descobrindo meu papel no Scrum" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divisor - Início em design -->
+    <div class="timeline-divider">
+      <h3>🎨 Início em Design</h3>
+    </div>
+
+    <!-- Slogan Pessoal e Profissional -->
+    <div class="timeline-item">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">✨</span>
+          <span class="card-date">26/02</span>
+          <span class="card-title">Slogan Pessoal e Profissional</span>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-description">
+              Nesta atividade, desenvolvemos slogans pessoais e profissionais com o objetivo de comunicar nossa identidade e posicionamento de forma visual e impactante. Para isso, aplicamos conceitos de hierarquia tipográfica (variação de tamanhos, pesos e estilos das fontes para guiar a leitura) e arquétipos na tipografia, utilizando estilos de letra que transmitissem traços da nossa personalidade.
+            </p>
+            
+            <div class="card-learn">
+              <span class="learn-title">O que aprendi:</span>
+              <p>Como a tipografia e os arquétipos visuais comunicam valores pessoais e profissionais de forma instantânea.</p>
+            </div>
+            
+            <blockquote class="card-quote">
+              "Um slogan bem construído é como uma assinatura visual: transmite quem somos antes mesmo de falarmos."
+            </blockquote>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-image">
+              <img src="img/1.svg" alt="Slogan Pessoal e Profissional" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cores e Gestalt -->
+    <div class="timeline-item">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">🌈</span>
+          <span class="card-date">28/02</span>
+          <span class="card-title">Cores e Gestalt</span>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-description">
+              Nesta atividade, criamos slogans visuais aplicando os princípios da Gestalt (como proximidade, similaridade, figura e fundo, continuidade e fechamento) para fortalecer a comunicação visual e a legibilidade da mensagem. Além disso, utilizamos paletas de cores harmônicas (análogas, complementares ou triádicas) para reforçar o impacto emocional e a identidade visual do slogan.
+            </p>
+            
+            <div class="card-learn">
+              <span class="learn-title">O que aprendi:</span>
+              <p>A força dos princípios da Gestalt para guiar o olhar e criar mensagens claras.</p>
+            </div>
+            
+            <blockquote class="card-quote">
+              "O cérebro completa o que vê - e um bom design sabe usar isso a seu favor."
+            </blockquote>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-image">
+              <img src="img/Gestalt1.svg" alt="Cores e Gestalt" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logo de um app de música -->
+    <div class="timeline-item">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">🎵</span>
+          <span class="card-date">07/03</span>
+          <span class="card-title">Azeel - Logo para App de Música</span>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-description">
+              Nesta atividade, desenvolvemos a identidade visual de um aplicativo de música, com foco principal na criação da logomarca. A proposta exigiu a aplicação de conceitos de design gráfico, cores harmônicas, tipografia adequada ao público-alvo e símbolos relacionados ao universo musical. A logo deveria ser funcional, memorável e adaptável para diferentes etapas da prototipagem.
+            </p>
+            
+            <div class="card-learn">
+              <span class="learn-title">O que aprendi:</span>
+              <p>Como cores, formas e tipografia devem refletir o propósito de uma marca.</p>
+            </div>
+            
+            <blockquote class="card-quote">
+              "Uma logo não é apenas um desenho, é a primeira nota de uma experiência visual."
+            </blockquote>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-image">
+              <img src="img/Azeel.svg" alt="Logo do Azeel" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recriação da logo do Figma -->
+    <div class="timeline-item">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">✏️</span>
+          <span class="card-date">12/03</span>
+          <span class="card-title">Primeira Atividade no Figma</span>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-description">
+              Nesta atividade, fomos introduzidos à ferramenta Figma, com foco no desenvolvimento das habilidades básicas de design de interface. O exercício prático consistiu na recriação do logo oficial do Figma, utilizando formas vetoriais simples (círculos), aplicação precisa de cores oficiais e técnicas de alinhamento e organização de elementos em layers.
+            </p>
+            
+            <div class="card-learn">
+              <span class="learn-title">O que aprendi:</span>
+              <p>A precisão necessária para trabalhar com vetores, grids e alinhamento no Figma.</p>
+            </div>
+            
+            <blockquote class="card-quote">
+              "Detalhes mínimos fazem a diferença entre um ícone amador e um profissional."
+            </blockquote>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-image">
+              <img src="img/Figma Icon.svg" alt="Logo do Figma recriada" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+    <!-- Interface de Calculadora -->
+    <div class="timeline-item">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">🧮</span>
+          <span class="card-date">12/03</span>
+          <span class="card-title">Interface de Calculadora</span>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-description">
+              Nesta atividade, utilizamos o Figma para desenvolver uma interface de calculadora mobile, com o objetivo de praticar auto-layout, grid, alinhamento e criação de componentes reutilizáveis. A interface foi construída dentro de um frame de smartphone, simulando uma aplicação real com botões numéricos como componentes com variantes para diferentes estados.
+            </p>
+            
+            <div class="card-learn">
+              <span class="learn-title">O que aprendi:</span>
+              <p>Como auto-layout e componentes no Figma agilizam a criação de interfaces interativas.</p>
+            </div>
+            
+            <blockquote class="card-quote">
+              "Design não é só estética: é sobre funcionalidade e comportamento previsível."
+            </blockquote>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-image">
+              <img src="img/iPhone 13 & 14 - 1.svg" alt="Interface de Calculadora" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cartão de Visita Pessoal -->
+    <div class="timeline-item">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">📇</span>
+          <span class="card-date">12/03</span>
+          <span class="card-title">Cartão de Visita Pessoal</span>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-description">
+              Criação de um cartão de visita digital aplicando princípios de tipografia, alinhamento e paleta de cores harmônica. Desenvolvemos versões para frente e verso, utilizando hierarquia tipográfica para destacar informações essenciais e elementos gráficos representativos da identidade pessoal.
+            </p>
+            
+            <div class="card-learn">
+              <span class="learn-title">O que aprendi:</span>
+              <p>A importância do equilíbrio entre informação e estilo em um cartão de visita.</p>
+            </div>
+            
+            <blockquote class="card-quote">
+              "Um cartão é um resumo tangível da sua identidade - cada pixel conta."
+            </blockquote>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-image">
+              <img src="img/Cartão de Visita.svg" alt="Cartão de Visita Pessoal" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apresentação pessoal animada -->
+    <div class="timeline-item">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">🎬</span>
+          <span class="card-date">14/03</span>
+          <span class="card-title">Apresentação Pessoal Animada</span>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-description">
+              Criação de uma apresentação pessoal interativa no Figma com animações básicas e eventos. Desenvolvemos 10 frames com transições entre telas, utilizando animações como Dissolve, Move In e Smart Animate, além de interações como On Click e While Hovering.
+            </p>
+            
+            <div class="card-learn">
+              <span class="learn-title">O que aprendi:</span>
+              <p>Como animações simples tornam narrativas mais engaging.</p>
+            </div>
+            
+            <blockquote class="card-quote">
+              "Movimento não é enfeite: é ferramenta para guiar a atenção."
+            </blockquote>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-image">
+              <img src="img/iPhone 16 Pro Max - 1.svg" alt="Apresentação Pessoal Animada" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projeto de Escolha Livre -->
+    <div class="timeline-item">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">🎨</span>
+          <span class="card-date">14/03</span>
+          <span class="card-title">Projeto de Escolha Livre</span>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-description">
+              Desenvolvimento de um projeto autoral de interface (app, site ou dashboard) com complexidade intermediária no Figma. Aplicamos princípios de design como Gestalt, teoria das cores e tipografia, aliados a múltiplas formas de interação e animação em pelo menos 10 frames com diversas transições.
+            </p>
+            
+            <div class="card-learn">
+              <span class="learn-title">O que aprendi:</span>
+              <p>A liberdade criativa exige mais disciplina - para manter consistência visual.</p>
+            </div>
+            
+            <blockquote class="card-quote">
+              "Sem restrições, o desafio maior é ser seu próprio cliente exigente."
+            </blockquote>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-image">
+              <img src="img/iPhone 16 Pro Max - 2.svg" alt="Projeto de Escolha Livre" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Animação sobre o Figma -->
+    <div class="timeline-item">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">🔄</span>
+          <span class="card-date">14/03</span>
+          <span class="card-title">Animação sobre o Figma</span>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-description">
+              Criação de uma animação interativa com 12 frames explicando o funcionamento do Figma. Utilizamos animações avançadas como Smart Animate, Push, Slide In, e diversas interações para comunicar visualmente os recursos da ferramenta, integrando conceitos de design aprendidos.
+            </p>
+            
+            <div class="card-learn">
+              <span class="learn-title">O que aprendi:</span>
+              <p>Como explicar recursos complexos de forma visual e intuitiva.</p>
+            </div>
+            
+            <blockquote class="card-quote">
+              "Ensinar é a melhor forma de consolidar o aprendizado."
+            </blockquote>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-image">
+              <img src="img/iPhone 16 Pro Max - 2 (1).svg" alt="Animação sobre o Figma" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Protótipo de Alta Fidelidade -->
+    <div class="timeline-item">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">🎵</span>
+          <span class="card-date">28/03</span>
+          <span class="card-title">Protótipo de Alta Fidelidade - App de Música</span>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-description">
+              Desenvolvimento de um protótipo de alta fidelidade no Figma para um aplicativo de música, simulando a experiência real do usuário. Criamos telas com design refinado, componentes reutilizáveis e identidade visual consistente, integrando interações que simulam funcionalidades como navegação e reprodução de áudio.
+            </p>
+            
+            <div class="card-learn">
+              <span class="learn-title">O que aprendi:</span>
+              <p>A diferença entre um protótipo estático e uma simulação realista de experiência.</p>
+            </div>
+            
+            <blockquote class="card-quote">
+              "Alta fidelidade não é sobre perfeição, mas sobre antecipar problemas reais."
+            </blockquote>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-image">
+              <img src="img/Android Compact - 10.svg" alt="Protótipo de App de Música" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divisor - Parte de HTML e CSS -->
+    <div class="timeline-divider">
+      <h3>💻 Parte de HTML e CSS</h3>
+    </div>
+
+    <!-- Primeira Página Web -->
+    <div class="timeline-item">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">🌐</span>
+          <span class="card-date">09/04</span>
+          <span class="card-title">Primeira Página Web HTML & CSS</span>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-description">
+              Desenvolvimento de uma página inicial web responsiva utilizando HTML semântico e CSS externo. Aplicamos estruturação semântica, paleta de cores harmônica, tipografia diferenciada e princípios básicos de responsividade para criar uma página funcional em múltiplos dispositivos.
+            </p>
+            
+            <div class="card-learn">
+              <span class="learn-title">O que aprendi:</span>
+              <p>Como HTML semântico e CSS externo organizam o caos visual em código estruturado.</p>
+            </div>
+            
+            <blockquote class="card-quote">
+              "Escrever código limpo é como desenhar com regras invisíveis."
+            </blockquote>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-image">
+              <img src="img/TechBlog.png" alt="Primeira Página Web" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Landing Page com Flexbox -->
+    <div class="timeline-item">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">📱</span>
+          <span class="card-date">25/04</span>
+          <span class="card-title">Landing Page com Flexbox</span>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-description">
+              Criação de uma landing page responsiva com ênfase no uso do Flexbox para layout. A página inclui cabeçalho com menu, seção hero com call to action, mural de fotos organizado flexivelmente e rodapé, demonstrando o poder do Flexbox para layouts adaptáveis.
+            </p>
+            
+            <div class="card-learn">
+              <span class="learn-title">O que aprendi:</span>
+              <p>O poder do Flexbox para criar layouts adaptáveis sem truques complicados.</p>
+            </div>
+            
+            <blockquote class="card-quote">
+              "Flexbox é como um organizador de elementos - tudo se encaixa com as instruções certas."
+            </blockquote>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-image">
+              <img src="img/Viagens-que-marcam.png" alt="Landing Page com Flexbox" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Site Pessoal com CSS Grid -->
+    <div class="timeline-item">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">🔳</span>
+          <span class="card-date">07/05</span>
+          <span class="card-title">Site Pessoal com CSS Grid</span>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-description">
+              Desenvolvimento de um portfólio pessoal utilizando CSS Grid para posicionamento preciso dos elementos. Aplicamos propriedades como grid-template-columns, grid-template-rows e grid-area para criar uma estrutura visual complexa com alinhamento e proporções corretas.
+            </p>
+            
+            <div class="card-learn">
+              <span class="learn-title">O que aprendi:</span>
+              <p>Como Grid transforma o controle espacial em algo quase matemático.</p>
+            </div>
+            
+            <blockquote class="card-quote">
+              "Grid é a grade que liberta, não limita - quando bem aplicada."
+            </blockquote>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-image">
+              <img src="img/Portfolio.png" alt="Site Pessoal com CSS Grid" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aplicação Web com Inputs -->
+    <div class="timeline-item">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">📝</span>
+          <span class="card-date">16/05</span>
+          <span class="card-title">Aplicação Web com Inputs</span>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-description">
+              Criação de um sistema de reservas de restaurante com formulário completo contendo 10 campos de entrada diferentes. Implementamos validações, estilização personalizada para campos range, feedback visual para estados de foco e erro, além de garantir acessibilidade e responsividade.
+            </p>
+            
+            <div class="card-learn">
+              <span class="learn-title">O que aprendi:</span>
+              <p>A importância da validação e feedback visual em formulários.</p>
+            </div>
+            
+            <blockquote class="card-quote">
+              "Um input mal projetado pode ser a barreira entre o usuário e a ação."
+            </blockquote>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-image">
+              <img src="img/Sabores da Terra.png" alt="Aplicação Web com Inputs" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sistema Solar com Keyframes -->
+    <div class="timeline-item">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">🪐</span>
+          <span class="card-date">21/05</span>
+          <span class="card-title">Sistema Solar com Keyframes</span>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-description">
+              Animação de um sistema solar utilizando @keyframes no CSS. Criamos um sol central e planetas com características distintas orbitando em diferentes velocidades, aplicando transform, rotate e transform-origin para simular movimentos orbitais realistas.
+            </p>
+            
+            <div class="card-learn">
+              <span class="learn-title">O que aprendi:</span>
+              <p>Como @keyframes e transform criam ilusões de movimento orgânico.</p>
+            </div>
+            
+            <blockquote class="card-quote">
+              "Animação é a arte de dar vida ao estático com timing e trajetórias."
+            </blockquote>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-image">
+              <img src="img/Sistema S.png" alt="Sistema Solar com Keyframes" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formas com CSS -->
+    <div class="timeline-item">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-icon">🔷</span>
+          <span class="card-date">23/05</span>
+          <span class="card-title">Formas com CSS</span>
+        </div>
+        <div class="card-body">
+          <div class="card-content">
+            <p class="card-description">
+              Criação de layouts criativos utilizando exclusivamente CSS para formar figuras geométricas complexas. Exploramos propriedades como border, border-radius, clip-path e transform para construir elementos visuais sem imagens, demonstrando o poder do CSS para design gráfico.
+            </p>
+            
+            <div class="card-learn">
+              <span class="learn-title">O que aprendi:</span>
+              <p>Que border-radius e clip-path são ferramentas poderosas para formas complexas.</p>
+            </div>
+            
+            <blockquote class="card-quote">
+              "CSS é como escultura digital - cortamos e moldamos com código."
+            </blockquote>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-image">
+              <img src="img/Carro.png" alt="Formas com CSS" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
+    <!-- Adicione mais itens da timeline conforme necessário -->
+  
 
-  <section class="skills-section">
-  <h2>Habilidades Adquiridas</h2>
-
-  <!-- Gráfico / Barras de Progresso -->
-  <div class="skills-progress">
-    <div class="progress-bar">
-      <span>HTML5</span>
-      <div class="bar"><div class="fill" style="width: 90%"></div></div>
-    </div>
-    <div class="progress-bar">
-      <span>CSS3</span>
-      <div class="bar"><div class="fill" style="width: 85%"></div></div>
-    </div>
-    <div class="progress-bar">
-      <span>JavaScript</span>
-      <div class="bar"><div class="fill" style="width: 75%"></div></div>
-    </div>
-    <div class="progress-bar">
-      <span>React</span>
-      <div class="bar"><div class="fill" style="width: 65%"></div></div>
-    </div>
-  </div>
-
-  <!-- Linha do Tempo -->
-  <div class="timeline">
-    <h3>Progressão de Conhecimento</h3>
-    <ul>
-      <li><strong>2023:</strong> Fundamentos de HTML, CSS e lógica de programação</li>
-      <li><strong>2024:</strong> JavaScript, DOM, APIs e primeiros projetos</li>
-      <li><strong>2025:</strong> React, consumo de APIs e aplicações dinâmicas</li>
-    </ul>
-  </div>
-
-  <!-- Certificações -->
-  <div class="certifications">
-    <h3>Certificações e Conquistas</h3>
-    <div class="cert-grid">
-      <div class="cert-card">
-        <h4>HTML & CSS</h4>
-        <p>Curso concluído na plataforma Alura</p>
+<section class="habilidades">
+  <h2  id="Habilidades">Habilidades</h2>
+  <div class="habilidades-grid">
+    <div class="habilidade fade-in">
+      <div class="icone">
+        <img src="https://www.svgrepo.com/show/452228/html-5.svg" alt="HTML5">
       </div>
-      <div class="cert-card">
-        <h4>JavaScript Avançado</h4>
-        <p>Certificado pela DIO</p>
-      </div>
-      <div class="cert-card">
-        <h4>React na Prática</h4>
-        <p>Trilha Front-end na Rocketseat</p>
-      </div>
+      <p><strong>Ao longo do curso</strong>, aprendi a construir a estrutura de páginas com HTML5 de forma semântica, clara e acessível. Com o CSS3, passei a transformar ideias visuais em realidade: estilizando, organizando com flexbox e grid, e garantindo responsividade para todos os dispositivos.</p>
     </div>
+
+    <div class="habilidade fade-in">
+      <div class="icone">
+        <img src="https://www.svgrepo.com/show/395657/user-interface.svg" alt="UI/UX">
+      </div>
+      <p><strong>Entendi que design não é apenas estética, mas experiência.</strong> Aprendi a pensar como o usuário — usando princípios de hierarquia visual, contraste, alinhamento e espaçamento.</p>
+    </div>
+
+    <div class="habilidade fade-in">
+      <div class="icone">
+        <img src="https://www.svgrepo.com/show/449955/universal-access.svg" alt="Acessibilidade">
+      </div>
+      <p><strong>Aprimorei meu olhar para acessibilidade</strong>, garantindo que meus sites sejam utilizáveis por qualquer pessoa, independentemente do dispositivo ou limitação.</p>
+    </div>
+
+    <div class="habilidade fade-in">
+  <div class="icone">
+    <img src="https://www.svgrepo.com/show/71631/man-and-big-ascending-arrow.svg" alt="Evolução">
   </div>
+  <p>
+    <strong>Aprendi que ser desenvolvedor é estar em constante evolução.</strong> Ao longo da minha jornada, descobri que ser desenvolvedor vai muito além de escrever códigos ou dominar tecnologias. Aprendi que ser desenvolvedor é, na essência, resolver problemas — com lógica, criatividade e empatia. A cada nova técnica, erro ou desafio, fui aprimorando meu conhecimento para explorar novas tecnologias.
+  </p>
+</div>
+
+</section>
+
+
+<section class="reflexao-final fade-in">
+  <h2 id="Reflexão_final">Reflexão Final</h2>
+  <p>
+    Olhando para tudo que aprendi até aqui, percebo que cada habilidade desenvolvida vai além do código. Aprender sobre HTML, CSS, design, acessibilidade e lógica me fez entender que ser desenvolvedor é unir técnica e sensibilidade. É transformar problemas em soluções, com empatia pelo usuário e compromisso com a melhoria contínua.
+  </p>
+  <p>
+    O curso não apenas me ensinou a programar — ele despertou em mim uma nova forma de pensar, criar e comunicar ideias. Saio dessa etapa mais confiante, preparado para os próximos desafios e com a certeza de que o aprendizado nunca para. 🚀
+  </p>
 </section>
 
 
 
 
 <footer class="footer">
-  <p>&copy; 2025 Pedro Garcia | Desenvolvido com 💻 e café ☕</p>
+  <div class="footer-content">
+    <h2>Pedro Garcia</h2> 
+    <p>© 2025 Todos os direitos reservados.</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/pedro-garcia-batista-20879934a" target="_blank" rel="noopener noreferrer">
+  <img src="https://www.svgrepo.com/show/355097/linkedin-option.svg" alt="LinkedIn" />
+</a>
+      <a href="https://github.com/PedroG0612" target="_blank" rel="noopener noreferrer">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" 
+       alt="GitHub" 
+       width="40">
+</a>
+  
 </footer>
 
 
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // Observador da seção
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+
+        // Se for a seção habilidades
+        if (entry.target.classList.contains('habilidades')) {
+          const habilidades = entry.target.querySelectorAll('.habilidade');
+          habilidades.forEach((habilidade, index) => {
+            habilidade.style.animationDelay = `${index * 0.2}s`;
+          });
+        }
+      }
+    });
+  }, { threshold: 0.01 });
+
+  document.querySelectorAll('section').forEach(section => {
+    sectionObserver.observe(section);
+  });
+
+  // Hover nos links
+  const navLinks = document.querySelectorAll('nav ul li a');
+  navLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+      link.style.transform = 'translateY(-5px)';
+      link.style.color = 'var(--cor-primaria)';
+    });
+    link.addEventListener('mouseleave', () => {
+      link.style.transform = 'translateY(0)';
+      link.style.color = 'var(--cor-texto)';
+    });
+  });
+
+  // Efeito de digitação
+  const texto = "Além de";
+  const elemento = document.getElementById("alemDe");
+  let i = 0;
+
+  function digitar() {
+    if (i < texto.length) {
+      elemento.textContent += texto.charAt(i);
+      i++;
+      setTimeout(digitar, 150); // velocidade da digitação (ms por letra)
+    }
+  }
+
+  // Chama a função digitar
+  digitar();
+});
+</script>
+
+
+  </main>
 </body>
 </html>
